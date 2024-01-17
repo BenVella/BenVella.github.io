@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: gaia
+theme: marpit
 ---
 
 # Git Introduction
@@ -11,28 +11,29 @@ A presentation on the basics, features, and use cases of Git.
 
 # What is Git?
 
-- Git is a distributed version control system (DVCS) designed to track changes in source code during software development.
+- Git is a distributed Version Control System (DVCS) designed to track changes in source code during software development.
 - Git was created by Linus Torvalds in 2005 and has become the industry standard for version control.
 - Git allows developers to collaborate on projects, maintain version history, and manage codebase modifications.
 
 ---
-
+<style scoped>section { font-size: 30px; }</style>
 # Git vs Perforce
 
-- Perforce is a centralized version control system (CVCS) that enhances security and scalability.
-- Git is a distributed version control system (DVCS) that offers flexibility and collaboration.
-- Some key differences are:
+- Primarily, Perforce is a Centralized Version Control System (CVCS) while Git is Distributed
+- In theory, you can add other colleague's repos as remotes and directly push / pull on them
 
 | Git | Perforce |
 | --- | -------- |
 | Works offline | Requires network connection |
 | Stores full repository on each machine | Stores only working copy on each machine |
-| Supports branching and merging | Supports file locking and shelving |
-| Has a large and active community | Has a smaller and more niche community |
+| Uses Branches and Commits | Uses Streams and Changelists |
+| Requires LFS for file locking | Supports file locking natively |
 
 ---
 
-# An example of how Git and Perforce differ
+# An example workflow of Perforce
+
+- Do the usual addition of 
 
 - Suppose you want to work on a new feature for your project.
 - In Git, you would create a new branch from the main branch and work on it locally. You can commit, push, and pull changes as you wish. When the feature is ready, you can merge it back to the main branch.
